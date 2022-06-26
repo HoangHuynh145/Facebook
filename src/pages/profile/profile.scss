@@ -1,0 +1,33 @@
+.profileContainer {
+    margin-top: 5rem;
+    background-color: #18191a;
+
+    .profileBody {
+        margin-top: 1.6rem;
+        padding: 0 15%;
+
+        .bodyWrapper {
+            padding: 0 1.6rem;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .leftBody {
+                width: 42.5rem;
+                margin-right: 1.6rem;
+            }
+
+            .mainBody {
+                flex: 1;
+            }
+        }
+    }
+
+    
+    .bg {
+        background-color: #242526;
+        padding: .6rem .6rem 2rem;
+        border-radius: .8rem;
+        margin-bottom: 1.6rem;
+    }
+}

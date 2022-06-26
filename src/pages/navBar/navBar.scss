@@ -1,0 +1,694 @@
+.navBarWrapper {
+    width: 100vw;
+    height: 5.6rem;
+    background-color: #242526;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    border-bottom: .1rem solid #98989832;
+
+    .navBarContainer {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navBarStart {
+            margin-left: 1.6rem;
+            display: flex;
+            flex: 1;
+
+            .imageBrand {
+                width: 4rem;
+                height: 4rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .searchContainer {
+                margin-left: 1rem;
+                background-color: #3a3b3c;
+                display: flex;
+                align-items: center;
+                border-radius: 5rem;
+
+                .iconSearch {
+                    padding-left: 1.2rem;
+
+                    svg {
+                        width: 1.8rem;
+                        height: 1.8rem;
+                        vertical-align: middle;
+
+                        path {
+                            stroke: #a8aaaf;
+                        }
+                    }
+                }
+
+                input[type="text"] {
+                    background-color: transparent;
+                    padding: .7rem .8rem .9rem;
+                    font-size: 1.6rem;
+                    width: 100%;
+                    color: #fff;
+
+                    &::placeholder {
+                        color: #a8aaaf;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+        .navBarMiddle {
+            flex: 1;
+            height: 100%;
+
+            .contacts {
+                display: flex;
+                justify-content: space-between;
+                height: 100%;
+
+                .contactsItem {
+                    position: relative;
+                    max-width: 11.2rem;
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: .3rem 0;
+                    border-radius: .7rem;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 80%;
+                        background-color: #2374e1;
+                        bottom: -3px;
+                        left: 10%;
+                        margin: 0 auto;
+                    }
+
+                    &.active {
+                        svg {
+                            color: #2374e1;
+                            fill: #2374e1;
+                            stroke: #2374e1;
+                        }
+
+                        &::after {
+                            height: 0.3rem;
+                        }
+
+                        &:hover {
+                            background-color: unset;
+                            cursor: pointer;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                        cursor: pointer;
+                    }
+
+                    svg {
+                        width: 2.5rem;
+                        height: 2.5rem;
+                        color: #b0b3b8;
+
+                        path {
+                            stroke: #b0b3b8;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navBarEnd {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+            padding: 0 4rem 0 .4rem;
+
+            .personalPage {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-right: 0.8rem;
+                height: 65%;
+                padding: 0 1.2rem 0 .5rem;
+                border-radius: 5rem;
+
+                &.active {
+                    background-color: #263951;
+
+                    .userName {
+                        color: #2d88ff
+                    }
+
+                    &:hover {
+                        background-color: #3d536e;
+                    }
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    cursor: pointer;
+                }
+
+                .userAvatar {
+                    width: 2.8rem;
+                    height: 2.8rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: .5rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .userName {
+                    color: #e4e6eb;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+            }
+
+            .userNotification {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .itemsNotification {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    width: 4rem;
+                    height: 4rem;
+                    line-height: 5;
+                    text-align: center;
+                    border-radius: 50%;
+
+                    &.active {
+                        background-color: rgba(45, 136, 255, 0.2);
+
+                        &:hover {
+                            background-color: rgba(111, 170, 248, 0.2);
+
+                        }
+
+                        svg {
+                            fill: hsl(214, 100%, 59%);
+                        }
+                    }
+
+                    svg {
+                        width: 1.7rem;
+                        height: 1.7rem;
+                        line-height: 1.7rem;
+                        fill: #e4e6eb;
+                    }
+
+                    &:hover {
+                        background-color: rgb(81, 81, 81);
+                        cursor: pointer;
+                    }
+                }
+
+                .itemsNotification:not(:last-child) {
+                    margin-right: 0.8rem;
+                }
+            }
+        }
+    }
+
+    .optionWrapper {
+        position: absolute;
+        right: 3.3rem;
+        top: 5rem;
+        color: #e4e6eb;
+
+        .optionsPopup {
+            background-color: #242526;
+            width: 36rem;
+            border-radius: .8rem;
+            padding: .8rem;
+            box-shadow:
+                0 12px 28px 0 rgb(0 0 0 / 20%),
+                0 2px 4px 0 rgb(0 0 0 / 10%),
+                inset 0 0 0 1px rgb(255 255 255 / 5%);
+            display: none;
+
+            ::-webkit-scrollbar {
+                width: .8rem;
+                background-color: transparent;
+            }
+    
+            ::-webkit-scrollbar-thumb {
+                background: #686868;
+                border-radius: .8rem;
+                visibility: hidden;
+            }
+
+            &.active {
+                display: block;
+            }
+
+            // Last Popup Started
+            .userDesc {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 0 .8rem;
+                border-radius: .8rem;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    cursor: pointer;
+                }
+
+                .userAvatar {
+                    width: 6rem;
+                    height: 6rem;
+                    border-radius: 50%;
+                    margin: .6rem 1.2rem .6rem;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-position: center;
+                    }
+                }
+
+                .userInfo {
+                    display: flex;
+                    flex-direction: column;
+
+                    .name {
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                    }
+
+                    .desc {
+                        color: #b0b3b8;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+
+            .space {
+                background-color: rgb(62, 64, 66);
+                height: 0.1rem;
+                margin: 0.8rem;
+            }
+
+            //Last Popup Ended
+
+            .option {
+                padding: 0 .8rem;
+                max-height: 54.4rem;
+                &.notification,
+                &.chat{
+                    overflow-y: scroll;
+                }
+
+                &:hover {
+                    &.notification,
+                    &.chat{
+                        &::-webkit-scrollbar-thumb {
+                            visibility: visible;
+                        }
+                    }
+                }
+
+                .item {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-radius: .8rem;
+                    padding: 0 .8rem;
+                    position: relative;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                        cursor: pointer;
+
+                        .icon {
+                            display: flex;
+                        }
+                    }
+
+                    // Last Popup Started
+                    .icon {
+                        width: 3.6rem;
+                        height: 3.6rem;
+                        margin: .6rem 1.2rem .6rem 0;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgba(255, 255, 255, 0.1);
+                        cursor: pointer;
+
+                        svg {
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                    }
+
+                    .title {
+                        display: flex;
+                        flex-direction: column;
+                        color: #b0b3b8;
+                        flex: 1;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+
+                        .content {
+                            font-weight: 400;
+                            font-size: 1.4rem;
+                            max-height: 6.3rem;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+
+                            .author {
+                                display: inline;
+                                color: #e4e6eb;
+                            }
+
+                        }
+
+                        .time {
+                            font-size: 1.2rem;
+                            font-weight: 500;
+                        }
+
+                        // Message
+                        .message {
+                            display: block;
+                            font-size: 1.2rem;
+                        }
+
+                        .messageWrapper {
+                            display: flex;
+                            align-items: center;
+
+                            .message {
+                                margin-right: .5rem;
+                            }
+
+                            .timeChat {
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                            }
+                        }
+
+                    }
+
+                    .seeMore {
+                        width: 2.4rem;
+                        height: 2.4rem;
+
+                        svg {
+                            width: 100%;
+                            height: 100%;
+                            fill: #e4e6eb;
+                        }
+                    }
+
+                    // Last Popup Ended
+
+                    // Notifications Popup Started
+                    .imageWrapper {
+                        width: 5.6rem;
+                        height: 5.6rem;
+                        margin: .6rem 1.2rem .6rem 0;
+                        position: relative;
+
+                        .image {
+                            width: 100%;
+                            height: 100%;
+                            border: .1rem solid #98989832;
+                            border-radius: 50%;
+                            overflow: hidden;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .typePost {
+                            position: absolute;
+                            width: 2.8rem;
+                            height: 2.8rem;
+                            bottom: -0.5rem;
+                            right: -0.5rem;
+                            border-radius: 50%;
+                            background: linear-gradient(180deg, rgba(22, 166, 252, 1) 0%, rgba(1, 100, 225, 1) 100%);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            svg {
+                                width: 75%;
+                                height: 75%;
+                            }
+                        }
+                    }
+
+                    .noti {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 2.5rem;
+                        width: 3.6rem;
+                        height: 3.6rem;
+                        border: .1rem solid rgba(16, 16, 16, 0.2);
+                        background-color: #3E4042;
+                        border-radius: 50%;
+                        justify-content: center;
+                        align-items: center;
+                        display: none;
+                        margin: unset;
+
+                        &:hover {
+                            background-color: #7a7c7e;
+                        }
+
+                        svg {
+                            width: 2rem;
+                            height: 2rem;
+                            fill: #e4e6eb;
+                        }
+                    }
+
+                    // Notifications Popup Ended
+
+                    // Messenger Popup Started
+                    .waitMess {
+                        margin: .6rem 1.2rem .6rem 0;
+                        width: 5.6rem;
+                        height: 5.6rem;
+                        background-color: rgba(255, 255, 255, 0.1);
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        svg {
+                            width: 2.4rem;
+                            height: 2.4rem;
+                            color: #e4e6ea;
+                        }
+                    }
+
+                    // Message and Notification
+                    .status{
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        border-radius: 50%;
+                        svg{
+                            width: 90%;
+                            height: 90%;
+                        }
+                    }
+
+                    .readed svg {
+                        color: rgba(255, 255, 255, 0.3);
+                    }
+
+                    .unread svg {
+                        color:rgb(46, 137, 255)
+                    }
+
+                    // Messenger Popup Ended
+                }
+            }
+
+            // Notifications Popup Started
+            .above {
+                padding: 0 .8rem;
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h2 {
+                        font-size: 2.4rem;
+                    }
+
+                    .iconList {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .icon {
+                            width: 3.2rem;
+                            height: 3.2rem;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            &:hover {
+                                background-color: rgba(255, 255, 255, 0.1);
+                                cursor: pointer;
+                            }
+
+                            svg {
+                                width: 2rem;
+                                height: 2rem;
+                                color: #a8abaf;
+                            }
+                        }
+                    }
+                }
+
+                .aboveOption {
+                    display: flex;
+                    align-items: center;
+                    padding-top: 0.5rem;
+
+                    .optionItem {
+                        height: 3.6rem;
+                        line-height: 3.6rem;
+                        margin-right: 0.8rem;
+                        padding: 0 1.2rem;
+                        font-size: 1.3rem;
+                        border-radius: 5rem;
+                        font-weight: 600;
+
+                        &.active {
+                            background-color: #263951;
+                            color: #2d88ff;
+                        }
+
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.1);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .notiDesc {
+                display: flex;
+                padding: 1rem 0 0.4rem .8rem;
+                justify-content: space-between;
+                align-items: center;
+
+                .descTitle {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+
+                .seeAll {
+                    height: 3.6rem;
+                    padding: 0 .8rem;
+                    border-radius: .5rem;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.1);
+                        cursor: pointer;
+                    }
+
+                    span {
+                        color: #4599ff;
+                        font-size: 1.3rem;
+                        font-weight: 500;
+                        display: inline-block;
+                        margin: auto 0;
+                        vertical-align: middle;
+                        line-height: 3.6rem;
+                    }
+                }
+
+                // Messenger Popup Started
+                .inputWrapper {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    height: 3.6rem;
+                    padding: 0 .8rem;
+                    width: 100%;
+                    background-color: #3a3b3c;
+                    border-radius: 5rem;
+                    color: rgb(176, 179, 184);
+                    margin-bottom: .8rem;
+
+                    svg {
+                        width: 1.7rem;
+                        height: 1.7rem;
+                    }
+
+                    .inputMess {
+                        flex: 1;
+                        padding: .7rem .6rem;
+                        background-color: transparent;
+                        font-size: 1.5rem;
+                        color: rgb(176, 179, 184);
+
+                        &::-webkit-input-placeholder {
+                            color: rgb(176, 179, 184);
+                            font-size: 1.4rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                // Messenger Popup Ended
+            }
+
+            // Notifications Popup Ended
+
+            // Message Popup Started
+            .endChat{
+                width: 104.5%;
+                padding: 1.4rem 0 .5rem;
+                box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+                position: relative;
+                left: -0.7rem;
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: rgb(69, 153, 255);
+                text-align: center;
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

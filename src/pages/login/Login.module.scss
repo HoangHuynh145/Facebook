@@ -1,0 +1,363 @@
+.container {
+    background-color: #f0f2f5;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 9.2rem;
+    padding-bottom: 13.2rem;
+
+    .loginWrapper {
+        margin: auto;
+        width: 98rem;
+        display: flex;
+
+        .loginLeft {
+            padding-right: 4.8rem;
+            flex: 1;
+
+            .loginLeftAbove {
+                margin-bottom: 1.2rem;
+
+                .brand {
+                    color: #1877f2;
+                    font-size: 4.6rem;
+                    font-weight: bolder;
+                    letter-spacing: -2px;
+                }
+
+                .title {
+                    font-size: 2.8rem;
+                    color: #1c1e21;
+                    font-weight: 500;
+                }
+
+                .description {
+                    font-size: 1.5rem;
+                    color: #606770;
+                    ;
+                }
+            }
+
+            .userAvatarWarpper {
+                display: flex;
+
+                .loginLeftAvatar {
+                    border-radius: .8rem;
+                    width: 16rem;
+                    box-shadow: 0 0 0 1px #dddfe2;
+                    margin-right: 2rem;
+
+                    &:hover {
+                        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+                        border-radius: 0 .8rem .8rem .8rem;
+                        cursor: pointer;
+
+                        .avatarWrapper .deleteAcount {
+                            background-color: #fff;
+                            transform: scale(1.5);
+                            transform-origin: bottom right;
+
+                            svg {
+                                fill: rgb(60, 60, 60);
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+
+                    .avatarWrapper {
+                        position: relative;
+                        height: 16rem;
+
+                        .deleteAcount {
+                            position: absolute;
+                            background-color: rgba(0, 0, 0, .3);
+                            top: 0.4rem;
+                            left: 0.5rem;
+                            border-radius: 50%;
+                            width: 1.6rem;
+                            height: 1.6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            svg {
+                                fill: #fff;
+                            }
+                        }
+
+                        img {
+                            border-radius: .8rem .8rem 0 0;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+
+                    .userName {
+                        background-color: #fff;
+                        height: 4.6rem;
+                        text-align: center;
+                        padding: 1.2rem;
+                        border-radius: 0 0 .8rem .8rem;
+
+                        span {
+                            color: #4b4f56;
+                            font-size: 1.8rem;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .iconAddLogin {
+                        height: 16rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        svg {
+                            width: 5.3rem;
+                            height: 5.3rem;
+                            fill: #1877f2;
+                        }
+                    }
+
+                    .title {
+                        background-color: #fff;
+                        height: 4.6rem;
+                        text-align: center;
+                        padding: 1.2rem;
+
+                        span {
+                            color: #1877f2;
+                            font-size: 1.8rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+
+        .loginRight {
+            margin-top: 4rem;
+
+            .loginRightContainer {
+                background-color: #fff;
+                box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+                width: 39.6rem;
+                height: 35rem;
+                padding: 1rem 1.6rem 2.4rem 1.6rem;
+                border-radius: 0.8rem;
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    border: 1px solid #dddfe2;
+                    border-radius: .8rem;
+                    padding: 1.4rem 1.6rem;
+                    margin: .6rem 0 .6rem 0;
+                    font-size: 1.7rem;
+
+                    &:focus {
+                        outline: 1px solid #1877f2;
+                        box-shadow: 0 0 0 2px #e7f3ff;
+                    }
+                }
+
+                .btnLogin {
+                    margin-top: 1rem;
+                    background-color: #1877f2;
+                    font-size: 2rem;
+                    padding: 0 1.6rem;
+                    line-height: 4.8rem;
+                    border-radius: .8rem;
+                    font-weight: 700;
+                    a{
+                        color: #fff;
+                    }
+                    &:hover {
+                        background-color: #166fe5;
+                        cursor: pointer;
+                    }
+                }
+
+                span {
+                    margin-top: 1.6rem;
+                    color: #1877f2;
+                    font-size: 1.4rem;
+                    text-align: center;
+                    font-weight: 500;
+                    margin-bottom: 2rem;
+
+                    &:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+
+                .createAcount {
+                    border-top: 1px solid #dadde1;
+                    text-align: center;
+
+                    button {
+                        margin-top: 2.6rem;
+                        padding: 0 1.6rem;
+                        background-color: #42b72a;
+                        color: #fff;
+                        border-radius: .8rem;
+                        line-height: 4.8rem;
+                        font-size: 1.7rem;
+                        font-weight: 500;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #36a420;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .popupLogin {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .4);
+        top: 0;
+
+        .popupContainer {
+            width: 40rem;
+            height: 50rem;
+            background-color: #fff;
+            padding: 1.6rem;
+            top: 10%;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            border-radius: .5rem;
+
+            .popupClose {
+                width: 3.6rem;
+                height: 3.6rem;
+                background-color: #EDEDF0;
+                line-height: 4.6;
+                border-radius: 50%;
+                text-align: center;
+                position: relative;
+                left: 90%;
+                cursor: pointer;
+                svg{
+                    width: 2rem;
+                    height: 2rem;
+                    fill:rgb(60, 60, 60)
+                }
+            }
+
+            .popupUserInfo {
+                margin-top: 2.4rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .img {
+                    width: 16.2rem;
+                    height: 16.2rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+
+                    }
+                }
+
+                .userName {
+                    font-size: 1.7rem;
+                    font-weight: 400;
+                    padding: .4rem 0 1.4rem;
+                }
+            }
+
+            .popupInput {
+
+                input[type="password"] {
+                    border: 1px solid #dddfe2;
+                    border-radius: .8rem;
+                    padding: 1.4rem 1.6rem;
+                    margin: .6rem 0 .6rem 0;
+                    font-size: 1.6rem;
+                    width: 100%;
+                    margin: .6rem 0;
+
+                    &:focus {
+                        outline: 1px solid #1877f2;
+                        box-shadow: 0 0 0 2px #e7f3ff;
+                    }
+
+                    &::placeholder {
+                        opacity: .7;
+                    }
+                }
+
+                .forgotPassword {
+                    display: flex;
+                    align-items: center;
+                    margin-top: .6rem;
+                    margin-bottom: 1.6rem;
+
+                    input[type="checkbox"] {
+                        width: 2rem;
+                        height: 2rem;
+                        margin-right: 1.2rem;
+                    }
+
+                    label {
+                        font-size: 1.5rem;
+                        color: #606770;
+                        vertical-align: middle;
+                    }
+                }
+
+            }
+
+            .popupButton {
+                margin: 1.2rem 0;
+
+                button {
+                    padding: 0 1.6rem;
+                    margin: .8rem 0;
+                    background-color: #1877f2;
+                    width: 100%;
+                    line-height: 2.4;
+                    border-radius: .8rem;
+                    font-weight: 500;
+                    font-size: 1.7rem;
+
+                    a{
+                        color: #fff;
+                    }
+                    
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #166fe5;
+                    }
+                }
+
+                span {
+                    padding: 1rem 0;
+                    font-size: 1.6rem;
+                    color: #1877f2;
+                    text-align: center;
+                    display: block;
+                    font-weight: 400;
+
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
