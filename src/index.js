@@ -1,21 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import { LoginPage, NavBar, MainPage, ProfilePage } from './pages'
+import { NavBar, MainPage, ProfilePage, LoginPage } from './pages'
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Browser, Route, Routes, Link } from 'react-router-dom'
+import { BrowserRouter as Browser, Route, Routes } from 'react-router-dom'
 import { StoreProvider } from './pages/main/store'
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <StoreProvider>
       <Browser>
         <Routes>
-          <Route path="/" element={<LoginPage />}></Route>
+          <Route path="/" element={<LoginPage />} />
           <Route path="/navBar" element={<NavBar />}>
-            <Route path="main" element={<MainPage />}></Route>
-            <Route path="profile" element={<ProfilePage />}></Route>
+            <Route path="main" element={<MainPage />} />
+            <Route path="profile" element={<ProfilePage />} />
           </Route>
         </Routes>
       </Browser>
