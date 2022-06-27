@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import { NavBar, MainPage, ProfilePage, LoginPage } from './pages'
+import { NavBar, MainPage, ProfilePage } from './pages'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Browser, Route, Routes } from 'react-router-dom'
 import { StoreProvider } from './pages/main/store'
@@ -12,8 +12,8 @@ root.render(
     <StoreProvider>
       <Browser>
         <Routes>
-          <Route path="/Facebook" element={<App />} />
-          <Route path="/Facebook/navBar" element={<NavBar />}>
+          <Route path="/" element={<App />} />
+          <Route path="/navBar" element={<NavBar />}>
             <Route path="main" element={<MainPage />} />
             <Route path="profile" element={<ProfilePage />} />
           </Route>
