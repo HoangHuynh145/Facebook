@@ -176,7 +176,7 @@ const Main = () => {
                                 <div className="icon"><GoReport /></div>
                                 <span className="title">Đóng góp ý kiến</span>
                             </li>
-                            <Link className="item" to="/">
+                            <Link className="item" to="/Facebook">
                                 <div className="icon"><ImExit /></div>
                                 <span className="title">Đăng xuất</span>
                             </Link>

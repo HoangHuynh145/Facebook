@@ -43,7 +43,7 @@ const Main = () => {
         <div className="mainContentContainer">
             <div className="contentWrapper">
                 <div className="leftContent">
-                    <Link className="aboveLeftContent" to='/navBar/profile'>
+                    <Link className="aboveLeftContent" to='../profile'>
                         <div className="userAvatar">
                             <img src="/img/avatar.jpg" alt="avatar"/>
                         </div>
