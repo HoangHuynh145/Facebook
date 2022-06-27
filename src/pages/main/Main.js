@@ -45,7 +45,7 @@ const Main = () => {
                 <div className="leftContent">
                     <Link className="aboveLeftContent" to='../profile'>
                         <div className="userAvatar">
-                            <img src="/img/avatar.jpg" alt="avatar"/>
+                            <img src="/Facebook/img/avatar.jpg" alt="avatar"/>
                         </div>
                         <div className="userName">Huỳnh Huy Hoàng</div>
                     </Link>
@@ -118,7 +118,7 @@ const Main = () => {
                         <span className="title">Được tài trợ</span>
                         <div className="adsWarpper">
                             <div className="imageAds">
-                                <img src='/img/rider.jpg' alt="ads"/>
+                                <img src='/Facebook/img/rider.jpg' alt="ads"/>
                             </div>
                             <div className="infoAds">
                                 <span className="brand"> My ride, My zone</span>
@@ -127,7 +127,7 @@ const Main = () => {
                         </div>
                         <div className="adsWarpper">
                             <div className="imageAds">
-                                <img src='/img/detail.jpg' alt="ads"/>
+                                <img src='/Facebook/img/detail.jpg' alt="ads"/>
                             </div>
                             <div className="infoAds">
                                 <span className="brand">Detailing</span>

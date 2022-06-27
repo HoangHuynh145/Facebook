@@ -36,7 +36,7 @@ const Cmt = ({ cmt, cmtId, handleDeleteComment, handleUpdateComment }) => {
         <>
             <div className="userAvatarWrapper">
                 <div className="image">
-                    <img src="/img/avatar.jpg" alt="avatar" />
+                    <img src="/Facebook/img/avatar.jpg" alt="avatar" />
                 </div>
             </div>
             <div className="cmtTitle">

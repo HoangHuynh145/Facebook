@@ -84,7 +84,7 @@ const PostArea = ({ isProfile }) => {
             <div className="postArea">
                 <div className="postAreaAbove">
                     <div className="userAvatar">
-                        <img src="/img/avatar.jpg" alt="avatar" />
+                        <img src="/Facebook/img/avatar.jpg" alt="avatar" />
                     </div>
                     <div className="postInput">
                         <input

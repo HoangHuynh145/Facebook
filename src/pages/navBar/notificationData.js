@@ -24,7 +24,7 @@ const messages = [
     {
         id: 1,
         frName: 'Hoang Huynh',
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         title: 'Hello',
         time: randomNumberTime(),
         duration: type[randomType()],
@@ -33,7 +33,7 @@ const messages = [
     {
         id: 2,
         frName: 'Hoang Huynh',
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         title: 'Hello 2',
         time: randomNumberTime(),
         duration: type[randomType()],
@@ -42,7 +42,7 @@ const messages = [
     {
         id: 3,
         frName: 'Hoang Huynh',
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         title: 'Hello 3',
         time: randomNumberTime(),
         duration: type[randomType()],
@@ -51,7 +51,7 @@ const messages = [
     {
         id: 4,
         frName: 'Hoang Huynh',
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         title: 'Hello 4',
         time: randomNumberTime(),
         duration: type[randomType()],
@@ -60,7 +60,7 @@ const messages = [
     {
         id: 5,
         frName: 'Hoang Huynh',
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         title: 'Hello 4',
         time: randomNumberTime(),
         duration: type[randomType()],
@@ -69,7 +69,7 @@ const messages = [
     {
         id: 6,
         frName: 'Hoang Huynh',
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         title: 'Hello 4',
         time: randomNumberTime(),
         duration: type[randomType()],
@@ -78,7 +78,7 @@ const messages = [
     {
         id: 7,
         frName: 'Hoang Huynh',
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         title: 'Hello 4',
         time: randomNumberTime(),
         duration: type[randomType()],
@@ -87,7 +87,7 @@ const messages = [
     {
         id: 8,
         frName: 'Hoang Huynh',
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         title: 'Hello 4',
         time: randomNumberTime(),
         duration: type[randomType()],
@@ -98,7 +98,7 @@ const messages = [
 const notifications = [
     {
         id: 1,
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         frName: 'Senyamiku',
         title: 'đã gắn thẻ bạn trong 1 bài viết',
         icon: <HiTag />,
@@ -109,7 +109,7 @@ const notifications = [
     },
     {
         id: 2,
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         frName: 'Senyamiku',
         title: 'đăng một ảnh mới trên dòng thời gian của cô ấy.',
         icon: <MdCommentBank />,
@@ -120,7 +120,7 @@ const notifications = [
     },
     {
         id: 3,
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         frName: 'Senyamiku',
         title: 'Đã gắn thẻ bạn trong 1 bài viết',
         icon: <HiTag />,
@@ -131,7 +131,7 @@ const notifications = [
     },
     {
         id: 4,
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         frName: 'Đặng Lê Nguyên Vũ',
         title: 'đã chấp nhận lời mời kết bạn của bạn bây giờ hai bạn có thể nhắn tin cho nhau.',
         icon: <FaUsers />,
@@ -142,7 +142,7 @@ const notifications = [
     },
     {
         id: 5,
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         frName: 'Senyamiku',
         title: 'đã đăng một bài viết mới trên dòng thời gian của cô ấy.',
         icon: <MdCommentBank />,
@@ -153,7 +153,7 @@ const notifications = [
     },
     {
         id: 6,
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         frName: 'Đặng Lê Nguyên Vũ',
         title: 'Đã gắn thẻ bạn trong 1 bài viết',
         icon: <HiTag />,
@@ -164,7 +164,7 @@ const notifications = [
     },
     {
         id: 7,
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         frName: 'Đặng Lê Nguyên Vũ',
         title: 'đã bày tỏ cảm xúc về một bài viết mà bạn đã được gắn thẻ',
         icon: <FaUsers />,
@@ -175,7 +175,7 @@ const notifications = [
     },
     {
         id: 8,
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         frName: 'Nguyễn Quốc Cường',
         title: 'đã đăng một ảnh mới trên dòng thời gian của anh ấy',
         icon: <MdCommentBank />,
@@ -186,7 +186,7 @@ const notifications = [
     },
     {
         id: 9,
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         frName: 'Phạm Trần Nhật Minh',
         title: 'đã chấp nhận lời mời kết bạn của bạn bây giờ hai bạn có thể nhắn tin cho nhau.',
         icon: <FaUsers />,
@@ -197,7 +197,7 @@ const notifications = [
     },
     {
         id: 10,
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         frName: 'Độ Phùng',
         title: 'đã gửi đến cho bạn lời mời kết bạn.',
         icon: <FaUsers />,
@@ -208,7 +208,7 @@ const notifications = [
     },
     {
         id: 11,
-        avt: '/img/avatar.jpg',
+        avt: '/Facebook/img/avatar.jpg',
         frName: 'Độ Phùng',
         title: 'đã gắn thẻ bạn vào một bài viết',
         icon: <FaUsers />,

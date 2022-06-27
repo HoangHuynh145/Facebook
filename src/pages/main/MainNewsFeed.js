@@ -12,7 +12,7 @@ const MainNewsFeed = () => {
                     <div className="createNews">
                         <div className="imageWarpper">
                             <div className="image">
-                                <img src="/img/avatar.jpg" alt="avatar" />
+                                <img src="/Facebook/img/avatar.jpg" alt="avatar" />
                             </div>
                             <div className="iconAddNews">
                                 <AiOutlinePlus />

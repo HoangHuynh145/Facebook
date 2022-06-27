@@ -105,7 +105,7 @@ const Main = () => {
                 <div className="navBarContainer">
                     <div className="navBarStart">
                         <Link className="imageBrand" to="main">
-                            <img src="/img/brand.png" alt="user avatar" />
+                            <img src="/Facebook/img/brand.png" alt="user avatar" />
                         </Link>
                         <div className="searchContainer">
                             <span className="iconSearch"><GrSearch /></span>
@@ -124,7 +124,7 @@ const Main = () => {
                     <div className="navBarEnd">
                         <Link className="contactsItem personalPage" to='profile'>
                             <div className="userAvatar">
-                                <img src="/img/avatar.jpg" alt="Avatar"/>
+                                <img src="/Facebook/img/avatar.jpg" alt="Avatar"/>
                             </div>
                             <span className="userName">Hoàng</span>
                         </Link>
@@ -148,7 +148,7 @@ const Main = () => {
                     <div className="optionsPopup userPage">
                         <Link className="userDesc" to='profile'>
                             <div className="userAvatar">
-                                <img src="/img/avatar.jpg" alt="Avatar"/>
+                                <img src="/Facebook/img/avatar.jpg" alt="Avatar"/>
                             </div>
                             <div className="userInfo">
                                 <span className="name">Huỳnh Huy Hoàng</span>

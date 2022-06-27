@@ -99,7 +99,7 @@ const ProfileHeader = () => {
                         {coverImg ? (
                             <img src={coverImg.preview} alt="bia" />
                         ) : (
-                            <img src="/img/bia.jpg" alt="anh_bia" />
+                            <img src="/Facebook/img/bia.jpg" alt="anh_bia" />
                         )}
                     </div>
                     <div className="linear"></div>
@@ -147,7 +147,7 @@ const ProfileHeader = () => {
                             {avatar ? (
                                 <img src={avatar.preview} alt="avatar" />
                             ) : (
-                                <img src="/img/avatar.jpg" alt="avatar" />
+                                <img src="/Facebook/img/avatar.jpg" alt="avatar" />
                             )}
                         </div>
                         <button className="changeAvatar" onClick={toggleShowHideChangeAvt}>

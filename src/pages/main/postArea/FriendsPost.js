@@ -168,8 +168,8 @@ const FriendsPost = ({ data, postId, handleShowPostOption, handleToggleShowCmt }
             </span>
             <div className="postContact friend">
                 <div className="icon">
-                    <img src='/img/heart.png' alt="postImg" />
-                    <img src='/img/like.png' alt="postImg" />
+                    <img src='/Facebook/img/heart.png' alt="postImg" />
+                    <img src='/Facebook/img/like.png' alt="postImg" />
                     <span className="numberContact">{data.numbLike}</span>
                 </div>
                 <div className="cmtnAndShare friend">

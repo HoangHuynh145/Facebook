@@ -97,7 +97,7 @@ const UserPost = ({ postId, post, handleShowPostOption, handleToggleShowCmt }) =
                 <div className="postInfo">
                     <div className="userAvatarWrapper">
                         <div className="image">
-                            <img src="/img/avatar.jpg" alt="avatar" />
+                            <img src="/Facebook/img/avatar.jpg" alt="avatar" />
                         </div>
                     </div>
                     <div className="aboutPost">
@@ -165,8 +165,8 @@ const UserPost = ({ postId, post, handleShowPostOption, handleToggleShowCmt }) =
             </span>
             <div className="postContact user">
                 <div className="icon">
-                    <img src='/img/heart.png' alt="postImg" />
-                    <img src='/img/like.png' alt="postImg" />
+                    <img src='/Facebook/img/heart.png' alt="postImg" />
+                    <img src='/Facebook/img/like.png' alt="postImg" />
                     <span className="numberContact">0</span>
                 </div>
                 <div className="cmtnAndShare user">
