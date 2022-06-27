@@ -12,8 +12,8 @@ root.render(
     <StoreProvider>
       <Browser>
         <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/navBar" element={<NavBar />}>
+          <Route path="" element={<App />} />
+          <Route path="navBar" element={<NavBar />}>
             <Route path="main" element={<MainPage />} />
             <Route path="profile" element={<ProfilePage />} />
           </Route>
