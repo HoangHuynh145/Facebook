@@ -26,7 +26,7 @@ const Login = () => {
                                 <div className={styles.deleteAcount}>
                                     <FaTimes />
                                 </div>
-                                <img className={styles.userAvatar} src="/Facebook/img/avatar.jpg" />
+                                <img className={styles.userAvatar} src="Facebook/img/avatar.jpg" />
                             </div>
                             <div className={styles.userName}>
                                 <span>Hoàng</span>
