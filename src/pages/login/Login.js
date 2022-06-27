@@ -38,9 +38,9 @@ const Login = () => {
                     <div className={styles.popupContent}>
                         <div className={styles.content}>
                             Chào bạn,
-                            Trang web này được xây dựng dựa trên Facebook với mục đích học tập.
+                            Trang web này được xây dựng dựa trên Facebook với mục đích học tập. Có sử dụng hình ảnh của một số cá nhân.
                             <br />
-                            Nếu có vấn đề gì vui lòng liên hệ trực tiếp với bạn Hoàng. Have fun ^^.
+                            Nếu có bất cứ vấn đề hay góp ý gì vui lòng liên hệ trực tiếp với bạn Hoàng. Have fun ^^.
                             <br />
                             <ul>
                                 <li>Version: 1.0.0</li>
