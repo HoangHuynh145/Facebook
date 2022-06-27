@@ -11,7 +11,7 @@ root.render(
     <StoreProvider>
       <Browser>
         <Routes>
-          <Route path="/Facebook" element={<LoginPage />} />
+          <Route path="/Facebook/login" element={<LoginPage />} />
           <Route path="/Facebook/navBar" element={<NavBar />}>
             <Route path="main" element={<MainPage />} />
             <Route path="profile" element={<ProfilePage />} />
