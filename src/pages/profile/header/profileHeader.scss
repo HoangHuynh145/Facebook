@@ -178,10 +178,79 @@
             margin-top: 4rem;
             line-height: .8;
 
-            .userName {
-                color: #e4e6eb;
-                font-size: 3.2rem;
-                font-weight: bolder;
+            .userDesc {
+                display: flex;
+
+                &:hover {
+                    .changeName {
+                        visibility: visible;
+                        cursor: pointer;
+                    }
+                }
+
+                .userName {
+                    color: #e4e6eb;
+                    font-size: 3.2rem;
+                    font-weight: bolder;
+                    margin-right: 1rem;
+                    cursor: default;
+
+                    &.active {
+                        display: none;
+                    }
+                }
+
+                .inputName {
+                    font-size: 1.6rem;
+                    background-color: #3a3b3c;
+                    padding: 0.8rem 1.2rem;
+                    border-radius: 1rem;
+                    color: #B0B3B8;
+                    margin-right: 1rem;
+                    display: none;
+
+                    &.active {
+                        display: unset;
+                    }
+                }
+
+                .btnChangeName {
+                    padding: 0 2rem;
+                    background-color: #2374e1;
+                    height: 3rem;
+                    border-radius: 0.8rem;
+                    font-size: 1.6rem;
+                    color: #e4e6eb;
+                    align-self: center;
+                    font-weight: 600;
+                    display: none;
+
+                    &.active {
+                        display: unset;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: rgb(86, 148, 229);
+                    }
+                }
+
+                .changeName {
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    color: rgb(159, 159, 159);
+                    margin-top: 0.7rem;
+                    visibility: hidden;
+
+                    &.active {
+                        display: none;
+                    }
+
+                    svg {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
             }
 
             .numberFr {
@@ -568,7 +637,7 @@
                     }
                 }
 
-                .contentWrapper:first-child{
+                .contentWrapper:first-child {
                     padding-bottom: 5rem;
                 }
             }

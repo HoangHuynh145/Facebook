@@ -43,10 +43,11 @@ const Login = () => {
                             Nếu có bất cứ vấn đề hay góp ý gì vui lòng liên hệ trực tiếp với bạn Hoàng. Have fun ^^.
                             <br />
                             <ul>
-                                <li>Version: 1.0.0</li>
+                                <li>Version: 1.0.1</li>
                                 <li>- Đăng bài viết</li>
                                 <li>- Tương tác bài viết</li>
                                 <li>- Thay đổi ảnh bìa, ảnh đại diện</li>
+                                <li>- Đổi tên người dùng</li>
                             </ul>
                         </div>
                     </div>
@@ -70,7 +71,7 @@ const Login = () => {
                                     <div className={styles.deleteAcount}>
                                         <FaTimes />
                                     </div>
-                                    <img className={styles.userAvatar} src="/Facebook/img/avatar.jpg" />
+                                    <img className={styles.userAvatar} src="/Facebook/img/avatar.jpg" alt="brand"/>
                                 </div>
                                 <div className={styles.userName}>
                                     <span>Hoàng</span>
@@ -107,7 +108,7 @@ const Login = () => {
                             </div>
                             <div className={styles.popupUserInfo}>
                                 <div className={styles.img}>
-                                    <img src="/img/avatar.jpg" />
+                                    <img src="/Facebook/img/avatar.jpg" alt="avatar"/>
                                 </div>
                                 <div className={styles.userName}>
                                     <p>Huỳnh Huy Hoàng</p>

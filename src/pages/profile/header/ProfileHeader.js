@@ -13,6 +13,7 @@ const ProfileHeader = () => {
     const [avatar, setAvatar] = useState()
     const [coverImg, setCoverImg] = useState()
     const [hideChangeAvt, setHideChangeAvt] = useState(true)
+    const [userName, setUserName] = useState('Huỳnh Huy Hoàng')
 
     const popupCoverRef = useRef()
 
@@ -91,6 +92,20 @@ const ProfileHeader = () => {
         }
     }
 
+    const handleChangeName = (type) => {
+        const nameOptions = document.querySelectorAll('.aboutUser .nameOption')
+        if(type === 'open') {
+            nameOptions.forEach(nameOption => {
+                nameOption.classList.add('active')
+            })
+            document.querySelector('.aboutUser .inputName').focus()
+        } else if (type === 'close') {
+            nameOptions.forEach(nameOption => {
+                nameOption.classList.remove('active')
+            })
+        }
+    }
+
     return (
         <>
             <div className="headerWrapper">
@@ -156,7 +171,27 @@ const ProfileHeader = () => {
                     </div>
 
                     <div className="aboutUser">
-                        <h1 className="userName">Huỳnh Huy Hoàng</h1>
+                        <div className="userDesc">
+                            <h1 className="userName nameOption">{userName}</h1>
+                            <input 
+                                type="text" 
+                                value={userName}
+                                className="inputName nameOption" 
+                                onChange={(e) => setUserName(e.target.value)}    
+                            />
+                            <button 
+                                className="btnChangeName nameOption" 
+                                onClick={() => handleChangeName('close')}
+                            >
+                                Xác nhận
+                            </button>
+                            <div 
+                                className="changeName nameOption" 
+                                onClick={() => handleChangeName('open')}
+                            >
+                                <FaPen />
+                            </div>
+                        </div>
                         <span className="numberFr">123 bạn bè</span>
                         <div className="frImages">
                             {frImagesBelowAvt.map(image => (

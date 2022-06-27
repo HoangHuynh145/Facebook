@@ -3,7 +3,7 @@ const frPosts = [
         id: 1,
         frName: 'Nguyễn Đạt',
         tagged: 'Hoang Huynh',
-        title: 'Đà Nẵng về đem cùng thằng em',
+        title: 'Đà Nẵng về đêm cùng thằng em',
         image: '/Facebook/img/post1.jpeg',
         frAvatar: '/Facebook/img/avtDat.jpg',
         tag: true,
