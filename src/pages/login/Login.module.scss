@@ -1,3 +1,87 @@
+.popupStarted {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10000;
+    padding-top: 10rem;
+    color: rgb(56, 56, 56);
+    display: none;
+    &.active{
+        display: block;
+    }
+
+    .popupWrapper {
+        border-radius: 2rem;
+        background-color: #fff;
+        width: 90rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+
+        .popupHeader {
+            position: relative;
+
+            .iconClose {
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                padding: .3rem 1rem;
+                width: 4.5rem;
+                height: 4.5rem;
+                color: #000;
+                border-radius: 50%;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.6);
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+
+            .greeting {
+                padding: 3.2rem 1.6rem;
+                text-align: center;
+                font-size: 5rem;
+                font-weight: bolder;
+
+            }
+        }
+
+        .popupContent {
+            padding: .2rem 1.6rem;
+            padding-bottom: 3rem;
+
+            .content {
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+        }
+
+        .popupBtn {
+            display: block;
+            margin: 0 auto;
+            padding: 1rem 4.5rem;
+            border-radius: 5rem;
+            background-color: rgb(52, 131, 52);
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #fff;
+
+            &:hover {
+                background-color: rgb(52, 131, 52, 0.8);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
 .container {
     background-color: #f0f2f5;
     width: 100vw;
@@ -170,9 +254,9 @@
                     line-height: 4.8rem;
                     border-radius: .8rem;
                     font-weight: 700;
-                    a{
-                        color: #fff;
-                    }
+                    text-align: center;
+                    color: #fff;
+
                     &:hover {
                         background-color: #166fe5;
                         cursor: pointer;
@@ -246,10 +330,11 @@
                 position: relative;
                 left: 90%;
                 cursor: pointer;
-                svg{
+
+                svg {
                     width: 2rem;
                     height: 2rem;
-                    fill:rgb(60, 60, 60)
+                    fill: rgb(60, 60, 60)
                 }
             }
 
@@ -334,10 +419,10 @@
                     font-weight: 500;
                     font-size: 1.7rem;
 
-                    a{
+                    a {
                         color: #fff;
                     }
-                    
+
                     &:hover {
                         cursor: pointer;
                         background-color: #166fe5;
